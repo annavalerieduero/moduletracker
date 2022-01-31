@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  height: 100%;
+  width: 100%;
+  background-image: 
+    linear-gradient(to right,
+      rgba(255, 255, 255, 1),
+      rgba(236, 86, 59, 1),
+      rgba(255, 0, 0, 1));
+    float: right;
+}
+
+.hero{
+  background-image: white;   
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.schedbg {
+  width: 110rem;
+  height: 60rem;
+  color: black;
+  background-color: lightgray;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  align-items: center;
+  margin: 50px 0 0 140px;
+  overflow: auto;
+}
+
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  color: black;
+  background-color: lightgrey;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-left: 50px;
+  float: left;
+  
+}
+
+.month {
+  width: 91%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: black;
+  text-align: center;
+  border-top-left-radius: 30px;
+
+}
+
+.month i { /*slider*/
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 { /*month*/
+  font-size: 3rem;
+  font-weight: 400;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p { /*below the month*/
+  font-size: 1.6rem;
+}
+
+.weekdays { /*weekdays*/
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.weekdays div { /*weekdays 2.0*/
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  color: white;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #Ff0000;
+  border-radius: 10px;
+  color: white;
+}
+
+/*SCHEDULE PART*/
+.sched-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 900px;
+  margin: 20px 140px 0 0;
+  float: right;
+  align-items: center;
+  overflow: auto;
+}
+
+.sched-container h3.title {
+  font-size: 35px;
+  text-align: center;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.sched-container .schedule {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  height: 110px;
+  display: flex;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.schedule .sched-left {
+  background: #Ec563b;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.schedule .sched-left .date {
+  font-size: 50px;
+}
+
+.schedule .sched-left .month1 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.schedule .sched-right {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.schedule .sched-right h3.type {
+  font-size: 25px;
+  margin: 5px 0 0 0;
+  color: #Ff0000;
+  text-transform: uppercase;
+}
+
+.schedule .sched-right h3.subject {
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.schedule .sched-right h3.modulenum {
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.schedule .sched-right .time {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  padding: 5px;
+  border-radius: 16px;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.schedule .sched-right .time img {
+  height: 14px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .schedule {
+    flex-direction: column;
+  }
+
+  .schedule .sched-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .schedule .sched-left .sched-date .date,
+  .schedule .sched-left .sched-date .month1 {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .schedule .sched-left .sched-date {
+    padding: 10px 0;
+  }
+}
+
+/*SCHEDULE PART2*/
+.sched-container .schedule2 {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  height: 110px;
+  display: flex;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.schedule2 .sched-left2 {
+  background: #Ec563b;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.schedule2 .sched-left2 .date2 {
+  font-size: 50px;
+}
+
+.schedule2 .sched-left2 .month2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.schedule2 .sched-right2 {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.schedule2 .sched-right2 h3.type2 {
+  font-size: 25px;
+  margin: 5px 0 0 0;
+  color: #Ff0000;
+  text-transform: uppercase;
+}
+
+.schedule2 .sched-right2 h3.subject2 {
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.schedule2 .sched-right2 h3.modulenum2 {
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.schedule2 .sched-right2 .time2 {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  padding: 5px;
+  border-radius: 16px;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.schedule2 .sched-right2 .time2 img {
+  height: 14px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .schedule2 {
+    flex-direction: column;
+  }
+
+  .schedule2 .sched-left2 {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .schedule2 .sched-left2 .sched-date2 .date2,
+  .schedule2 .sched-left2 .sched-date2 .month2 {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .schedule2 .sched-left2 .sched-date2 {
+    padding: 10px 0;
+  }
+}
+
+/*header & footer*/
+/*
+html{ height:100%; }
+body{ min-height:100%; padding:0; margin:0; position:relative; }
+body::after{ content:''; display:block; height:100px; }
+footer{ 
+  position:absolute; 
+  bottom:0; 
+  width:100%; 
+  height:100px; 
+}
+header{ background:#Ec3614; text-align:center; height:50px; }
+footer{ background:#DB8A8A; text-align:center;}
+*/
+/*Color pallete:
+
+(orange) #Ec563b - 236, 86, 59, 1
+(Pomegranate) #Ec3614
+(white) #Ffffff - 255, 255, 255, 1
+(red) #Ff0000 - 255, 0, 0, 1*/

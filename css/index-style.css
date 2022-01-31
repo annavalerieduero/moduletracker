@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: 
+      rgba(255, 255, 255, 1);
+  display: grid;
+  width: 100%;
+  overflow: visible;
+  place-items: center;
+  
+}
+::selection{ 
+  background: #4158d0;
+  color: #fff;
+}
+
+.logo{
+  margin-top: 3%;
+}
+
+.box{
+  margin-right: 25%;
+  margin-top: 3%;
+  margin-left: 25%;
+  width: 100%;
+  background: linear-gradient(
+      rgba(236, 86, 59, 1),
+      rgba(255, 0, 0, 1));
+  border-top-left-radius: 54px;
+  border-top-right-radius: 54px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.field{
+  margin-right: 7%;
+}
+.box form .field {
+    height: 48px;
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 8%;
+    margin-left: 32%;
+    position: relative;
+}
+
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #Ec3614;
+  transition: all 0.3s ease;
+}
+.box form .field input{
+  height: 150%;
+  width: 24%;
+  margin-bottom: 7%;
+  outline: none;
+  font-size: 31px;
+  border: 5px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}

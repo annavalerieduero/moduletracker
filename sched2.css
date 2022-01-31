@@ -1,0 +1,146 @@
+.center {
+    width: 620px;
+    height: 320px;
+    margin-top: -50px;
+    right: 52%;
+    top: 30%;
+    
+    position: fixed;
+    background-color: #ec563b;
+    border-radius: 25px;
+    box-shadow: 5px 8px 6px #888888;
+    font-size: 15px;
+    overflow: auto;
+     
+  }
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+  }
+  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-style: oblique;
+    
+    
+  } 
+   
+h3{
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style:normal;
+  font-size: 12px; 
+  padding-left: 10px;
+}
+
+  .center p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    color: blanchedalmond;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  /*.hero{
+    background-image: blue;   
+     display: flex;
+     height: 100%;
+     width: 100%;
+     justify-content: flex-start;
+     align-items: center;
+     padding-top: 75px;
+     padding-left: 10%;
+  }*/
+
+
+  /*radio button*/
+  .center .controls {
+    display: flex;
+  }
+  
+  .center .radio {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+  }
+  
+    
+.center .sd{
+  display: flex;
+}
+  .center.schedDT{
+    
+    display: flex;
+
+  }
+.center .sd .schedDT{
+ height: 20px;
+ width: 10px;
+ flex-direction: row;
+ align-items: center;
+ margin-right: 15px;
+ margin-left: 10px;
+ flex: 1 0 auto;
+ display: flex;
+ margin-top: 40px;
+}
+
+.center  .sd p{
+  padding-top: 5px;
+}
+.center .submit_btn{
+  width: 80px;
+  height: 40px;
+    margin-top: 160px;
+    margin-left: 0;
+    top: 60%;
+    left: 46%;
+    position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #ec563b;
+    border-radius: 10px;
+}
+
+ hr{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.secdiv{
+  width: 600px;
+  height: 250px;
+  margin-top: -50px;
+  right: 5%;
+  top: 30%;
+  left: 52%;
+  position: fixed;
+  background-color: #ec563b;
+  border-radius: 25px;
+  box-shadow: 5px 8px 6px #888888;
+  overflow: auto;
+}
+
+.modset{
+  
+    width: 600px;
+    height: 150px;
+    margin-top: -50px;
+    right: 5%;
+    top: 70%;
+    left: 52%;
+    position: fixed;
+    background-color: #ec563b;
+    border-radius: 25px;
+    box-shadow: 5px 8px 6px #888888;
+    overflow: auto;
+  
+}
+  
+
+
+
+
